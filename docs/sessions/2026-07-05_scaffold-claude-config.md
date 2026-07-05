@@ -26,7 +26,7 @@ Follow-up (during plan review):
 
 ## Plan
 
-Full plan: [`C:\Users\bvonm\.claude\plans\please-create-a-plan-velvety-pond.md`](C:/Users/bvonm/.claude/plans/please-create-a-plan-velvety-pond.md)
+Full plan (copied into the repo): [`2026-07-05_scaffold-claude-config.plan.md`](2026-07-05_scaffold-claude-config.plan.md)
 
 Summary: scaffold a root `CLAUDE.md`, `.claude/agents/_template.md`,
 `.claude/skills/_template/SKILL.md`, `.claude/settings.json` with
@@ -48,6 +48,7 @@ session `Stop` if code was altered or a plan was created with no matching
 - `.claude/hooks/enforce-session-log.sh` — created
 - `.gitignore` — created
 - `docs/sessions/2026-07-05_scaffold-claude-config.md` — created (this file)
+- `docs/sessions/2026-07-05_scaffold-claude-config.plan.md` — created (copy of the approved plan)
 
 ## Summary & outcome
 
