@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="mcp-kb-storage-services-api/mcp-kb-storage-services-api.csproj" />
+  <Project Path="mcp-kb-storage-services-domain/mcp-kb-storage-services-domain.csproj" />
+  <Project Path="mcp-kb-storage-services-repo/mcp-kb-storage-services-repo.csproj" />
+</Solution>
