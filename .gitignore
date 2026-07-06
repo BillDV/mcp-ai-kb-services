@@ -91,3 +91,11 @@ src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/Debug/net10.0/mcp-k
 src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/mcp-kb-storage-services-repo.csproj.nuget.dgspec.json
 src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/project.assets.json
 src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/project.nuget.cache
+src/mcp-kb-storage-services/mcp-kb-storage-services-domain/obj/project.nuget.cache
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/Debug/net10.0/mcp-kb-storage-services-repo.AssemblyInfo.cs
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/Debug/net10.0/mcp-kb-storage-services-repo.AssemblyInfoInputs.cache
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/Debug/net10.0/mcp-kb-storage-services-repo.assets.cache
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/Debug/net10.0/mcp-kb-storage-services-repo.GeneratedMSBuildEditorConfig.editorconfig
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/mcp-kb-storage-services-repo.csproj.nuget.dgspec.json
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/project.assets.json
+src/mcp-kb-storage-services/mcp-kb-storage-services-repo/obj/project.nuget.cache
