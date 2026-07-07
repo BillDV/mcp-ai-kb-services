@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="interfaces\" />
+    <Folder Include="knowledge-entities\containers\" />
     <Folder Include="request-objects\" />
     <Folder Include="response-objects\" />
   </ItemGroup>
