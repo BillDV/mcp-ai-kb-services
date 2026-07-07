@@ -1,0 +1,21 @@
+# Common build outputs
+# Ignore any obj directories and their contents everywhere
+obj/
+**/obj/
+**/obj/**
+**/bin/
+**/out/
+
+# MSBuild-generated editorconfig files (environment-specific, non-deterministic)
+**/*.GeneratedMSBuildEditorConfig.editorconfig
+
+# Visual Studio and OS files
+.vs/
+*.user
+*.suo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Rider/IDE
+.idea/

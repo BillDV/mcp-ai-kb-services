@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>knowledgebase_contracts</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="interfaces\" />
+    <Folder Include="knowledge-entities\" />
+    <Folder Include="request-objects\" />
+    <Folder Include="response-objects\" />
+  </ItemGroup>
+
+</Project>
