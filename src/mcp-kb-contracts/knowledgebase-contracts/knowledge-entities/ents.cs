@@ -5,21 +5,7 @@ using System.Text;
 
 
 namespace knowledgebase_contracts.knowledge_entities {
-      public static class ents {
-            public enum kb_domain_type : byte {
-                  none = 0,
-                  mandate = 1,
-                  adr = 2,
-                  instruction = 3,
-                  skill = 4,
-                  index = 5,
-                  knowledge_artifact = 6,
-            }
-
-
-            public enum kb_hash_algorithm_type : byte {
-                  sha256 = 0
-            }
+      public static partial class ents {
 
             /// <summary>
             /// All registered modules must have a status entry in the 
@@ -48,6 +34,7 @@ namespace knowledgebase_contracts.knowledge_entities {
                   string path,
                   decimal version,
                   byte[ ] module_hash,
+                  byte[] module_signature,
                   string long_description,
                   string short_description,
                   string[ ] keywords
@@ -68,25 +55,60 @@ namespace knowledgebase_contracts.knowledge_entities {
 
                 );
 
-
-            public sealed record instruction_asset_entry(
+        /// <summary>
+        /// adr's control every aspect of the knowledgebase. They are the highest level of control; used to define the rules and regulations that govern the knowledgebase.
+        /// adr's are "packaged" as mandates once approved, which are then registered with the knowledgebase registry . 
+        /// The mandate is the highest level of control and is used to define the rules and regulations that govern the knowledgebase.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="hash"></param>
+        /// <param name="content_body"></param>
+        public sealed record adr_asset_entry(
                 int id,
                 string name,
-                byte[ ] hash
+                byte[] hash,
+                string content_body
+                );
+
+        /// <summary>
+        /// instructions provide guidance on how things should be implemented and styled.
+        /// ADR -> Mandate -> Instruction -> Skill -> Index -> Knowledge Artifact <- Agent
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="hash"></param>
+        /// <param name="content_body"></param>
+        public sealed record instruction_asset_entry(
+                       int id,
+                string name,
+                byte[] hash,
+                string content_body
                 );
 
 
 
             public sealed record skill_asset_entry(
-                int id,
+                         int id,
                 string name,
-                byte[ ] hash,
-    
+                byte[] hash,
+                string content_body
                 );
 
 
-
-            public sealed record index_asset_entry(
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <param name="id"></param>
+            /// <param name="name"></param>
+            /// <param name="hash"></param>
+            /// <param name="domain_storage_type"></param>
+            /// <param name="keywords"></param>
+            /// <param name="byte_size"></param>
+            /// <param name="line_count"></param>
+            /// <param name="word_count"></param>
+            /// <param name="estimated_tokens"></param>
+            public sealed record index_entry(
                 int id,
                 string name,
                 byte[ ] hash,
