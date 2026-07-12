@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/ai_kb/">
+    <Project Path="../mcp_ai_kb_contracts/mcp_ai_kb_contracts.csproj" />
+    <Project Path="../mcp_ai_kb_models/mcp_ai_kb_models.csproj" />
+    <Project Path="../mcp_ai_kb_store/mcp_ai_kb_store.csproj" />
+  </Folder>
+  <Project Path="mcp_ai_kb.csproj" />
+</Solution>
